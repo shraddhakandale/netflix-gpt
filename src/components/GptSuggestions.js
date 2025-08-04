@@ -7,8 +7,8 @@ const GptSuggestions = () => {
   const { movieNames, movieResults } = gpt;
   if (!movieNames || !movieResults) return null;
   return (
-    <div className="">
-    <div className="w-1/2 m-auto bg-black">
+    <div className="w-full">
+    <div className="md:w-1/2 m-auto bg-black">
       {movieNames.map((movieName, index) => (
         <MovieList
           key={movieName}
